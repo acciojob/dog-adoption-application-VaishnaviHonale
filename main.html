@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -8,43 +9,92 @@
 
 <body>
 	
-	<!-- the entire body must be written by student -->
+	<form>
+		
+		<label for="name">Name</label>
+		<input type="text" placeholder="Name" id="name" name="name">
+	
+		<label for="phone">Phone Number</label>
+		<input type="text" placeholder="Phone Number" id="phone" name="phone">
+
+	
+		<label for="address">Address</label>
+		<input type="text" placeholder="Address" id="address" name="address">
+
+		<label for="checkbox">Have you ever lived with a Dog before?</label>
+		<input type="checkbox" value="Have you ever lived with a Dog before?" id="checkbox">
+
+	<select id="multiSelect" multiple>
+  <option value="goldenRetriever">Golden Retriever</option>
+  <option value="poodle">Poodle</option>
+  <option value="germanShepherd">German Shepherd</option>
+  <option value="labradorRetriever">Labrador Retriever</option>
+  <option value="bulldog">Bulldog</option>
+</select>
+			
+			
+		<button value="Submit" id="submit">Submit</button>
+	</form>
+
+	
+	
     <script type="text/javascript" src="./script.js">
 </script>
-<form action="#" method="post">
-		<div>
-		   <div>
+
+</body>
+
+</html>
+ -->
+
+
+<!--  cpy from accio assig -->
+
+<!--copy from accio  -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<main>
+		<h1>Dog Adoption Application</h1>
+		<form method="post">
+			<section>
 				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Name">
-			</div>
-			<div>
-				<label for="phone">Phone Numbers</label>
-				<input type="text" name="phone" id="phone" placeholder="Phone Number">
-			</div>
-			<div>
+				 <input type="text" name="name" id="name" placeholder="Name" required>
+			</section>
+			<section>
+				<label for="phone">Phone Number</label>
+				 <input type="text" name="name" id="phone" placeholder="Phone Number" required>
+			</section>
+			<section>
 				<label for="address">Address</label>
-				<input type="text" name="address" id="address" placeholder="Address">
-			</div>
-			<div>
-				<label for="question">Have you ever lived with a Dog before?</label>
-				<input type="checkbox" name="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
-			</div>
-			<div>
-				<label for="multiSelect">Please select the preferred breeds</label>
-				<select name="multiSelect" id="multiSelect">
-					<option name="multiSelect">Pommeranean</option>
-					<option name="multiSelect">Bulldog</option>
-					<option name="multiSelect">Germansheperd</option>
-					<option name="multiSelect">Germansheperd</option>
-				</select>
-			</div>
-			<div>
-				<Button type="submit" id="submit" value="submit">Submit</Button>
-			</div>
-		</div>
-		
-	</form>
-	
+				 <input type="text" name="address" id="address" placeholder="Address" required>
+			</section>
+			<section>
+				<input type="checkbox" name="checkbox" id="checkbox" value="Have you ever lived with a Dog before?" required>
+				<label for="checkbox">Have you ever lived with a Dog before?</label>
+			</section>
+			<section>
+				<label for="multiSelect">Please select your preferred breeds</label>
+			  <select id="multiSelect" required>
+				  <option value="Bulldog">Bulldog</option>
+				  <option value="German Shepherd">German Shepherd</option>
+				  <option vlaue="Golden Retrieve">Golden Retrieve</option>
+			  </select>
+			</section>
+
+			<section>
+				<input type="submit" id="submit" value="Submit">
+			</section>
+		</form>
+	</main>
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
 
